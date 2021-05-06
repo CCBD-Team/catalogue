@@ -19,7 +19,7 @@ jobs:
         working-directory: go/src/github.com/microservices-demo/catalogue
     runs-on: ubuntu-latest
     env:
-      GROUP: weaveworksdemos
+      GROUP: ccbdteam
       COMMIT: ${{ github.sha }}
       REPO: catalogue
       GO_VERSION: 1.7.5

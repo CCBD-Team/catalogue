@@ -74,8 +74,8 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASS }}
-          dockerfile: go/src/github.com/microservices-demo/catalogue/docker/catalogue-db/Dockerfile
-          path: go/src/github.com/microservices-demo/catalogue/docker/catalogue-db
+          dockerfile: ./catalogue/docker/catalogue-db/Dockerfile
+          path: ./catalogue/docker/catalogue-db
           repository: ${{ env.GROUP }}/${{ env.REPO }}
           tag_with_ref: true
           tag_with_sha: true

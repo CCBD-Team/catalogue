@@ -2,9 +2,9 @@ CREATE USER IF NOT EXISTS 'catalogue_user' IDENTIFIED BY 'default_password';
 
 GRANT ALL ON socksdb.* TO 'catalogue_user';
 
-DROP TABLE sock;
+/*DROP TABLE sock;
 DROP TABLE tag;
-DROP TABLE sock_tag;
+DROP TABLE sock_tag;*/
 
 CREATE TABLE IF NOT EXISTS sock (
 	sock_id varchar(40) NOT NULL, 

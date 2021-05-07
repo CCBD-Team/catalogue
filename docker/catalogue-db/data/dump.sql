@@ -6,7 +6,7 @@ DROP TABLE sock;
 DROP TABLE tag;
 DROP TABLE sock_tag;
 
-CREATE TABLE IF NOT EXISTS sock (
+/*CREATE TABLE IF NOT EXISTS sock (
 	sock_id varchar(40) NOT NULL, 
 	name varchar(20), 
 	description varchar(200), 
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS sock (
 	image_url_1 varchar(40), 
 	image_url_2 varchar(40), 
 	PRIMARY KEY(sock_id)
-);
+);*/
 
 CREATE TABLE IF NOT EXISTS tag (
 	tag_id MEDIUMINT NOT NULL AUTO_INCREMENT, 

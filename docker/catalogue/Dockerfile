@@ -1,7 +1,7 @@
 FROM golang:1.7
 
-COPY . github.com/CCBD-Team/catalogue
-WORKDIR github.com/CCBD-Team/catalogue
+COPY . /go/src/github.com/CCBD-Team/catalogue
+WORKDIR /go/src/github.com/CCBD-Team/catalogue
 
 RUN go get -u github.com/FiloSottile/gvt
 RUN gvt restore && \
@@ -30,13 +30,13 @@ ARG BUILD_DATE
 ARG BUILD_VERSION
 ARG COMMIT
 
-LABEL org.label-schema.vendor="Weaveworks" \
+LABEL org.label-schema.vendor="CCBD-Team" \
   org.label-schema.build-date="${BUILD_DATE}" \
   org.label-schema.version="${BUILD_VERSION}" \
   org.label-schema.name="Socks Shop: Catalogue" \
   org.label-schema.description="REST API for Catalogue service" \
-  org.label-schema.url="https://github.com/microservices-demo/catalogue" \
-  org.label-schema.vcs-url="github.com:microservices-demo/catalogue.git" \
+  org.label-schema.url="https://github.com/CCBD-Team/catalogue" \
+  org.label-schema.vcs-url="github.com:CCBD-Team/catalogue.git" \
   org.label-schema.vcs-ref="${COMMIT}" \
   org.label-schema.schema-version="1.0"
 

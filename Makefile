@@ -1,5 +1,5 @@
 NAME = weaveworksdemos/catalogue
-DBNAME = weaveworksdemos/catalogue-db
+DBNAME = ccbdteam/catalogue-db
 
 TAG=$(TRAVIS_COMMIT)
 
@@ -13,7 +13,7 @@ release:
 	docker build -t $(NAME) -f ./docker/catalogue/Dockerfile .
 
 test: 
-	GROUP=weaveworksdemos COMMIT=test ./scripts/build.sh
+	GROUP=ccbdteam COMMIT=test ./scripts/build.sh
 	./test/test.sh unit.py
 	./test/test.sh container.py --tag $(TAG)
 

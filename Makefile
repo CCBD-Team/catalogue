@@ -1,5 +1,5 @@
-NAME = ccbdteam/catalogue
-DBNAME = ccbdteam/catalogue-db
+NAME = ccbdteam/remodified-catalogue
+DBNAME = ccbdteam/remodified-catalogue:db
 
 TAG=$(TRAVIS_COMMIT)
 

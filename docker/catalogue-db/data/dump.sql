@@ -1,3 +1,5 @@
+hello I am ccol;
+
 CREATE USER IF NOT EXISTS 'catalogue_user' IDENTIFIED BY 'default_password';
 
 GRANT ALL ON socksdb.* TO 'catalogue_user';
